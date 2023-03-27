@@ -172,25 +172,15 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              FlatButton(
+              TextButton(
                 onPressed: () {},
-                padding: EdgeInsets.symmetric(horizontal: 30.0),
-                color: Theme.of(context).primaryColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
                 child: Text(
                   'Reviews',
                   style: TextStyle(color: Colors.white, fontSize: 20.0),
                 ),
               ),
-              FlatButton(
+              ElevatedButton(
                 onPressed: () {},
-                padding: EdgeInsets.symmetric(horizontal: 30.0),
-                color: Theme.of(context).primaryColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10.0),
-                ),
                 child: Text(
                   'Contact',
                   style: TextStyle(color: Colors.white, fontSize: 20.0),

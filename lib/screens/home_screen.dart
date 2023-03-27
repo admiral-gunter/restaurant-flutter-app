@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         title: Text('food dervery'),
         actions: <Widget>[
-          FlatButton(
+          TextButton(
             child: Text(
               'Cart (${currentUser.cart.length})',
               style: TextStyle(
