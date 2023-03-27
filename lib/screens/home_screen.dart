@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_main_ui/data/data.dart';
 import 'package:flutter_main_ui/models/restaurant.dart';
 import 'package:flutter_main_ui/screens/cart_screen.dart';
+import 'package:flutter_main_ui/screens/profile_screen.dart';
 import 'package:flutter_main_ui/screens/restauran_screen.dart';
 import 'package:flutter_main_ui/widgets/rating_stars.dart';
 import 'package:flutter_main_ui/widgets/recent_orders.dart';
@@ -102,9 +103,17 @@ class _HomeScreenState extends State<HomeScreen> {
         leading: IconButton(
           icon: Icon(Icons.account_circle),
           iconSize: 30.0,
-          onPressed: () {},
+          onPressed: () {
+            onPressed:
+            () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => ProfileScreen(),
+                  ),
+                );
+          },
         ),
-        title: Text('food dervery'),
+        title: Text('Food Delivery'),
         actions: <Widget>[
           TextButton(
             child: Text(

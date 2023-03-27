@@ -172,7 +172,7 @@ class _RestaurantScreenState extends State<RestaurantScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              TextButton(
+              ElevatedButton(
                 onPressed: () {},
                 child: Text(
                   'Reviews',
