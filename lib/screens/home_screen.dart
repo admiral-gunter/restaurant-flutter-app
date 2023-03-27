@@ -104,13 +104,12 @@ class _HomeScreenState extends State<HomeScreen> {
           icon: Icon(Icons.account_circle),
           iconSize: 30.0,
           onPressed: () {
-            onPressed:
-            () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => ProfileScreen(),
-                  ),
-                );
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => ProfileScreen(),
+              ),
+            );
           },
         ),
         title: Text('Food Delivery'),

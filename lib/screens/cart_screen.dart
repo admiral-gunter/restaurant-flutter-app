@@ -196,21 +196,26 @@ class _CartScreenState extends State<CartScreen> {
         },
         itemCount: currentUser.cart.length + 1,
       ),
-      bottomSheet: Container(
-        height: 100.0,
-        width: MediaQuery.of(context).size.width,
-        decoration: BoxDecoration(
-          color: Theme.of(context).primaryColor,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black26,
-              offset: Offset(0, -1),
-              blurRadius: 6.0,
-            ),
-          ],
-        ),
-        child: Center(
-          child: TextButton(
+      bottomSheet: InkWell(
+        onTap: () {
+          print('object');
+        },
+        child: Container(
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          height: 80.0,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(100),
+            color: Theme.of(context).primaryColor,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black26,
+                offset: Offset(0, -1),
+                blurRadius: 6.0,
+              ),
+            ],
+          ),
+          child: Center(
             child: Text(
               'CHECKOUT',
               style: TextStyle(
@@ -220,7 +225,6 @@ class _CartScreenState extends State<CartScreen> {
                 letterSpacing: 2.0,
               ),
             ),
-            onPressed: () {},
           ),
         ),
       ),
